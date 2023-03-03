@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour and Travels</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/root.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./assets/css/header.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/footer.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./assets/css/media.css">
+</head>
+
+<body>
+    <header id="header">
+        <div id="hamburger">
+            <span class="burgerLine"></span>
+            <span class="burgerLine"></span>
+            <span class="burgerLine"></span>
+        </div>
+        <nav class="navbar">
+
+            <div class="navWrapper">
+                <div class="leftNav" id="navLinks">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#intro">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#clients">Our Clients</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="rightNav">
+                    <span class="contactNum">
+                        <span id="contactIcon"><ion-icon name="call-outline"></ion-icon></span>
+                        <span id="contactNumber">Hotline:- +91 98765-43210</span>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="container homeWrapper">
+                <span class="homeText">
+                    <span class="mainHeading">Fusion Travel</span>
+                    <span class="supportingText">Let's discover The world Together</span>
+                </span>
+                <span class="big-btn"><button class="btn" onclick="underDevMsg()">Plan Your Trip</button></span>
+                <span class="videoLink">
+                    <span class="videoIcon"><ion-icon class="videoIcon" name="play-circle-outline"></ion-icon></span>
+                    <span class="videoText">
+                        <p class="videoWatchTextSm">
+                            Watch
+                        </p>
+                        <p class="videoDesc">
+                            Intro Video
+                        </p>
+                    </span>
+                </span>
+            </div>
+        </section>
+        <section id="intro">
+            <div class="container introWrapper">
+                <div class="introText">
+                    <h1 class="introHeading sectionHeading">Welcome to Fusion</h1>
+                    <div class="introDesc sectionDesc">
+                        <p>
+                            Our Tour and Travel company is listed in world's top 100 Tour and Travel companies. We
+                            provides many packages for clients so that they can have variations for their vacations. We
+                            provides Traveling services all over the world. Our main office is situated at USA
+                            California. To know more about us visit this link: <a href="#about" id="know-more">Know
+                                More</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="servicesCardsWrapper">
+                    <div>
+                        <div class="card active">
+                            <span class="card-icon pricing">
+                                <ion-icon name="airplane-outline"></ion-icon>
+                            </span>
+                            <span class="card-heading pricing-heading">
+                                Best Price Guarantee
+                            </span>
+                            <span class="card-desc pricing-desc">
+                                Here you will get best prices for your vacation plans with variety of offers. We make
+                                plans as our users will have compatibility.
+                            </span>
+                        </div>
+                        <div class="card">
+                            <span class="card-icon reputation">
+                                <ion-icon name="heart"></ion-icon>
+                            </span>
+                            <span class="card-heading reputation-heading">
+                                Best Travel Agency
+                            </span>
+                            <span class="card-desc reputation-desc">
+                                We provide best traveling experience to our clients by interacting with them alongside
+                                when they are traveling so that if they get any trouble, we can sort them on the spot.
+                            </span>
+                        </div>
+                        <div class="card">
+                            <span class="card-icon safety">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </span>
+                            <span class="card-heading safety-heading">
+                                Trust & Safety
+                            </span>
+                            <span class="card-desc safety-desc">
+                                Trust is our best asset and Safety is our first priority. We provide clients a luxury
+                                experience so that they have not to worry about anything.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="indicator-wrapper">
+                        <span id="indicate-pricing" class="indicator active"></span>
+                        <span id="indicate-reputation" class="indicator"></span>
+                        <span id="indicate-safety" class="indicator"></span>
+                    </div>
+                </div>
+                <hr class="baseline">
+            </div>
+        </section>
+        <section id="destination">
+            <div class="container destinationWrapper">
+                <div class="destinationTextWrapper">
+                    <h1 class="destinationHeading sectionHeading">Find Your Destination</h1>
+                    <span class="destinationDesc sectionDesc">Most Popular Places Are Waiting For You</span>
+                    <span class="searchBoxWrapper">
+                        <span class="searchBox">
+                            <label for="search">
+                                <span class="searchIcon"><ion-icon name="search-outline"></ion-icon></span>
+                                <span class="searchInput">
+                                    <input type="search" name="search" id="search" placeholder="Search..." value="">
+                                </span>
+                            </label>
+                        </span>
+                    </span>
+                </div>
+                <div class="destinationCardsWrapper">
+                    <div class="threeCardContainer">
+                        <div class="destinationCard">
+                            <p>
+                                Thailand
+                            </p>
+                            <img src="./assets/img/thialand.jpeg">
+                        </div>
+                        <div class="destinationCard">
+                            <p>
+                                Australia
+                            </p>
+                            <img src="./assets/img/australia.jpg">
+                        </div>
+                        <div class="destinationCard">
+                            <p>
+                                Indonesia
+                            </p>
+                            <img src="./assets/img/indonesia.jpg">
+                        </div>
+                    </div>
+                    <div class="threeCardContainer">
+                        <div class="destinationCard">
+                            <p>
+                                France
+                            </p>
+                            <img src="./assets/img/france.jpg">
+                        </div>
+                        <div class="destinationCard">
+                            <p>
+                                Malaysia
+                            </p>
+                            <img src="./assets/img/malaysia.jpg">
+                        </div>
+                        <div class="destinationCard">
+                            <p>
+                                UAE
+                            </p>
+                            <img src="./assets/img/uae.jpg">
+                        </div>
+                    </div>
+                    <button id="destinationCardSlideLeft" class="slideBtn" onclick="underDevMsg()"><ion-icon
+                            name="arrow-back-outline"></ion-icon></button>
+                    <button id="destinationCardSlideRight" class="slideBtn" onclick="underDevMsg()"><ion-icon
+                            name="arrow-forward-outline"></ion-icon></button>
+                </div>
+                <hr class="baseline">
+            </div>
+        </section>
+        <section id="blog">
+            <div class="container">
+                <div class="blogTextWrapper">
+                    <h1 class="blogHeading sectionHeading">Latest News From Blog</h1>
+                    <p class="blogDesc sectionDesc">
+                        See Whats People Are Sharing Their Thoughts
+                    </p>
+                </div>
+                <div class="blogCardWrapper">
+
+                    <span class="blogCard card1">
+                        <span class="blogCardImage">
+                            <img src="./assets/img/BlogImages/main.jpg">
+                        </span>
+                        <span class="blogCardText"></span>
+                    </span>
+                    <span class="blogCard card2">
+                        <span class="blogCardImage">
+                            <img src="./assets/img/BlogImages/img1.jpg">
+                        </span>
+                        <span class="blogCardText">In geology, a sill is a tabular sheet intrusion that has intruded
+                            between older layers of sedimentary rock, beds of volcanic lava or tuff, or along the
+                            direction of foliation in metamorphic rock</span>
+                    </span>
+                    <span class="blogCard card3">
+                        <span class="blogCardImage">
+                            <img src="./assets/img/BlogImages/img2.jpg">
+                        </span>
+                        <span class="blogCardText"></span>
+                    </span>
+                    <span class="blogCard card4">
+                        <span class="blogCardImage">
+                            <img src="./assets/img/BlogImages/img3.jpg">
+                        </span>
+                        <span class="blogCardText">Costa Rica’s road to decarbonisation is paved with political vision
+                            and painstaking planning – according to Andrea Meza, the country’s Director of Climate
+                            Change.</span>
+                    </span>
+                    <span class="blogCard card5">
+                        <span class="blogCardImage">
+                            <img src="./assets/img/BlogImages/img4.jpg">
+                        </span>
+                        <span class="blogCardText">The Great Wall of China is a series of fortifications that were built
+                            across the historical northern borders of ancient Chinese states and Imperial China</span>
+                    </span>
+                    <span class="blogCard card6">
+                        <span class="blogCardImage">
+                            <img src="./assets/img/BlogImages/img6.jpg">
+                        </span>
+                        <span class="blogCardText"></span>
+                    </span>
+                </div>
+                <div class="btn-wrapper">
+                    <button id="readMore" class="btn" onclick="underDevMsg()">Keep Reading</button>
+                </div>
+                <hr class="baseline">
+            </div>
+        </section>
+        <section id="clients">
+            <div class="container">
+                <div class="clientReviewTextWrapper">
+                    <div class="clientReviewHeading sectionHeading">
+                        What Our Client Say
+                    </div>
+                    <div class="clientReviewDesc sectionDesc">
+                        People’s sharing their thought about our works.
+                    </div>
+                </div>
+                <div class="clientReviewCardsWrapper">
+                    <div class="clientReviewCard">
+                        <span class="clientReviewCardImage">
+                            <img src="./assets/img/clients/cat_valentine.png">
+                        </span>
+                        <span class="clientReviewCardTextWrapper">
+                            <span class="clientReviewText">
+                                I have taken multiple trips with Fusion Traveling agency and the experience has been
+                                truly
+                                amazing. They customize packages based on your interests and provide the best prices in
+                                the market. I totally recommend Fusion Traveling Agency.
+                            </span>
+                            <span class="clientDesc">
+                                <span class="clientName">
+                                    Cat Valentine
+                                </span>
+                                <span class="clientPlace">
+                                    Beverly Hills L.A. (USA)
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="indicator-wrapper">
+                        <span id="indicate-client1" class="indicator active"></span>
+                        <span id="indicate-client2" class="indicator"></span>
+                        <span id="indicate-client3" class="indicator"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footerBookingBanner">
+            <div class="footerBookingBannerText">
+                Get Special Discount on your first journey!
+            </div>
+            <div class="footerBookingBannerButton">
+                <button class="footerBtn btn" onclick="underDevMsg()">Book Now</button>
+            </div>
+        </div>
+        <div class="footer-Links">
+            <div class="footerContactDetails" id="contact">
+                <span class="footerAboutUs footer-boxes">
+                    <span class="footer-heading" id="about">About Us</span>
+                    <ul class="footer-AboutUs-list footer-DescText">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </span>
+                <span class="footerAddress footer-boxes">
+                    <span class="footer-heading">Address</span>
+                    <span class="footer-DescText">
+                        <span class="footer-AddressTextMain">4433 Heaven Court</span>
+                        <span class="footer-AddressTextAddon">Mexico</span>
+                    </span>
+                </span>
+                <span class="footerContact footer-boxes">
+                    <span class="footer-heading">Contact Us</span>
+                    <span class="footer-DescText">
+                        <span class="footer-email">
+                            Email: cmlowerence2777@gmail.com
+                        </span>
+                        <span class="footer-mobile">
+                            Tel: +91 9876543210
+                        </span>
+                    </span>
+                </span>
+                <span class="footerFollowUs footer-boxes">
+                    <span class="footer-heading">Follow Us</span>
+                    <ul class="footer-FollowUs-list footer-DescText">
+                        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="https://github.com/cmlowerence"><ion-icon name="logo-github"></ion-icon></a></li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+        <hr class="baseline">
+        <div class="copyrightText">
+            Copyright &copy; 2023, All Rights Reserved
+        </div>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
+<!-- <img src="https://source.unsplash.com/random/1024x500/?science"> -->

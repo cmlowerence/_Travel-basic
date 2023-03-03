@@ -1,0 +1,300 @@
+@media screen and (max-width:1500px) {
+    .mainHeading{
+        font-size: 6rem;
+    }
+    .supportingText{
+        font-size: 1.8rem;
+    }
+    .big-btn .btn,
+    #readMore{
+        width: 17rem;
+        height: 3rem;
+        font-size: 1.2rem;
+        border-radius: 3rem;
+    }
+    .videoIcon{
+        font-size: 3rem;
+    }
+    .introHeading{
+        font-size: 3.5rem;
+    }
+    .introDesc p{
+        font-size: 1rem;
+    }
+    .card{
+        width: 11rem;
+        height: 11rem;
+        padding: 1.5rem;
+    }
+    .card-icon ion-icon {
+        font-size: 1.5rem;
+    }
+    .card-heading{
+        font-size: .9rem;
+    }
+    .card-desc{
+        font-size: .7rem;
+    }
+    .indicator-wrapper{
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width:1350px) {
+    #hamburger{
+        margin-left: 2rem;
+        display: block;
+    }
+    .leftNav{
+        top: -1000px;
+        left: -15px;
+        position: absolute;
+        width: auto;
+        background-color: rgba(251, 130, 0, 0.897);
+        box-shadow: inset 2px 2px 6px rgba(190, 98, 0, 0.79),inset 2px -2px 6px rgba(190, 98, 0, 0.79);
+        padding: 2rem 5rem;
+        border-radius: 1rem;
+        z-index: -1;
+        transition: .5s ease-in-out;
+    }
+    .leftNav.active{
+        top: 60px;
+    }
+    .leftNav ul{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rightNav{
+        width: 100%;
+        justify-content: flex-end;
+    }
+    .videoText>*{
+        font-size: .9rem;
+    }
+    .container{
+        z-index: -2;
+    }
+}
+@media screen and (max-width:1200px) {
+    .mainHeading{
+        font-size: 4rem;
+    }
+    .supportingText{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    
+
+    /* Destination Section Media Query */
+
+    .destinationHeading{
+        font-size: 3rem;
+    }
+    .destinationDesc {
+        font-size: 1rem;
+    }
+    .searchIcon ion-icon{
+        font-size: 1.2rem;
+    }
+    .searchInput input {
+        font-size: 1rem;
+    }
+    .destinationCard{
+        width: 10rem;
+        height: 10rem;
+    }
+    .destinationCard p{
+        font-size: 1.2rem;
+    }
+    /* Destination Section Media End */
+
+    /* Blog Section Media Start */
+    .blogHeading{
+        font-size: 3rem;
+    }
+    .blogDesc{
+        font-size: 1rem;
+    }
+    .blogCardWrapper{
+        max-width: 70%;
+        justify-content: center;
+        align-items: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .blogCard{
+        width: 10rem;
+        aspect-ratio: 1;
+        flex-grow: 1 ;
+        flex-basis: 14rem;
+    }
+    .blogCard>*.blogCardImage img{
+        width: 100%;
+        aspect-ratio: 1;
+    }
+    .blogCard *.blogCardText{
+        position: absolute;
+        color: #000000;
+        opacity: 0;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        aspect-ratio: 1;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: .8rem;
+        font-weight: 600;
+        transition: .3s ease-in-out;
+    }
+
+    .blogCard:hover .blogCardText{
+        opacity: 1;
+    }
+    .blogCard:hover .blogCardImage img{
+        mix-blend-mode:color-dodge;
+    }
+    .card5 .blogCardImage img{
+        width: 100%;
+        aspect-ratio: 1;
+    }
+    .card5{
+        margin: 0;
+        padding: 0;
+    }
+    #readMore.btn{
+        width: 12rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+    /* Blog Section Media End */
+
+    /* Client Section Media Start */
+    .clientReviewHeading{
+        font-size: 3rem;
+    }
+    .clientReviewDesc{
+        font-size: 1rem;
+    }
+    .clientReviewCard{
+        width: 30rem;
+        height: 7rem;
+    }
+    .clientReviewCard::before{
+        top: -4rem;
+        left: -6rem;
+    }
+    .clientReviewCard::after{
+        right: -6rem;
+        bottom: -10rem;
+    }
+    .clientReviewCard::after,.clientReviewCard::before{
+        font-size: 10rem;
+    }
+    .clientReviewCardImage{
+        height:6.5rem;
+        width: 6.5rem;
+        border-radius: .8rem;
+    }
+    .clientReviewCardTextWrapper{
+        gap: .8rem;
+    }
+    .clientDesc{
+        line-height: 1.2rem;
+    }
+    .clientReviewText,.clientPlace{
+        font-size: .9rem;
+    }
+    .clientName{
+        font-size: 1.2rem;
+    }
+
+    /* Client Section Media End */
+
+
+    /* Footer Section Media Start */
+    .footerBookingBanner{
+        height: 10rem;
+    }
+    /* Footer Section Media End */
+}
+@media screen and (max-width:1050px) {
+    /* Blog Section Media at 1050px width START */
+    .blogCardWrapper{
+        max-width: 60%;
+    }
+    .blogCard{
+        width: 10rem;
+        aspect-ratio: 1;
+        flex-grow: 0;
+        flex-basis: auto;
+    }
+    /* Blog Section Media at 1050px width END */
+
+    /* Footer section media at 1050px width Start */
+    .footerBookingBannerText{
+        font-size: 2rem;
+    }
+    .footerBookingBannerButton .btn{
+        padding: .9rem 3rem;
+    }
+    .footer-heading{
+        font-size: 1rem;
+    }
+    .footer-DescText, .footer-DescText ul{
+        font-size: .8rem;
+    }
+    .footer-DescText ion-icon{
+        font-size: 1rem;
+    }
+    .footer-FollowUs-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .copyrightText{
+        font-size: 1rem;
+    }
+    /* Footer section media at 1050px width End */
+}
+@media screen and (max-width:870px) {
+    .sectionHeading{
+        font-size: 2rem;
+    }
+    .sectionDesc{
+        font-size: .8rem;
+    }
+    /* Intro Section Media Start */
+    .card{
+        width: 9rem;
+        height: 9rem;
+        padding: .8rem 1rem;
+    }
+    .card-icon ion-icon {
+        font-size: 1rem;
+    }
+    .card-heading{
+        font-size: .8rem;
+    }
+    .card-desc{
+        font-size: .7rem;
+    }
+    .indicator-wrapper{
+        margin-top: 0;
+    }
+    /* Intro Section Media End */
+
+
+    /* Destination Section media Start */
+    .destinationCard{
+        width: 7rem;
+        height: 7rem;
+    }
+    /* Destination Section media End */
+
+    /* Blog section media Start */
+    
+    /* Blog section media End */
+}

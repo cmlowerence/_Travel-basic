@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Inconsolata:wght@400;500&family=Josefin+Sans:ital,wght@0,400;1,300&family=News+Cycle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Outfit:wght@200;400&family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #393939;
+}
+:root{
+    /* <=========== Dimensions ===============> */
+    --headerHeight: 70px;
+
+    /* <============= Fonts ===============> */
+
+    --headerFontFamily: 'Inconsolata', monospace;
+    --mainBodyTextFont:'Josefin Sans', sans-serif;
+    --mainBodyDescText: 'News Cycle', sans-serif;
+    --clientReviewTextFont: 'Ubuntu Condensed', sans-serif;
+    --clientNameTextFont: 'Caveat', cursive;
+    --footerTextFont: 'Outfit', sans-serif;
+    --defaultCardShadow: -4px 4px 15px rgba(0, 0, 0, 0.4), inset 2px 2px 7px rgba(0, 0, 0, 0.3);
+    --commaTextFont: 'Yantramanav', sans-serif;
+}

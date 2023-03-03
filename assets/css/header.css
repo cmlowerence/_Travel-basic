@@ -1,0 +1,113 @@
+:root{
+    --headerHeight: 70px;
+}
+*{
+    transition: .3s ease-in-out;
+}
+header{
+    width: 100vw;
+    height: var(--headerHeight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: transparent;
+    z-index: 1;
+    font-family: var(--headerFontFamily);
+    transition: .3s ease-in-out;
+    background-color: #393939a7;
+}
+.navbar{
+    position: relative;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    max-height: var(--headerHeight);
+}
+#hamburger{
+    padding: 3px 4px;
+    border: 1.5px solid rgb(235, 234, 234);
+    border-radius: 5px;
+    display: none;
+    left:0;
+    margin-left: 4rem;
+    position: absolute;
+    z-index: 10;
+}
+#hamburger.active{
+    border-color: #00b3ff;
+}
+#hamburger.active>.burgerLine:nth-child(1){
+    transform: translateY(6px) rotate(45deg);
+    background-color: #00b3ff;
+    
+}
+#hamburger.active>.burgerLine:nth-child(2){
+    opacity: 0;
+}
+#hamburger.active>.burgerLine:nth-child(3){
+    transform: translateY(-6px) rotate(-45deg);
+    background-color: #00b3ff;
+}
+.burgerLine{
+    width: 20px;
+    height: 4px;
+    margin: 2px;
+    display: block;
+    background-color: #f3eeee;
+    border-radius: 2px;
+    transition: .3s ease-in-out;
+}
+.navWrapper{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftNav{
+    width:65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftNav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.leftNav ul li a{
+    padding-bottom: 2px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    word-spacing: 0px;
+    transition: .3s ease-in-out;
+}
+.rightNav{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactNum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    gap:9px;
+    color: #fff;
+    font-family: var(--headerFontFamily);
+    cursor: pointer;
+}
+#contactNumber{
+    color: #fff;
+}
+#contactIcon ion-icon{
+    font-size: 1.7rem;
+    color: #fff;
+}

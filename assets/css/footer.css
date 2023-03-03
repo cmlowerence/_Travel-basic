@@ -1,0 +1,83 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    gap: 5rem;
+    font-family: var(--clientReviewTextFont);
+}
+.footerBookingBanner{
+    width: 100vw;
+    height: 14rem;
+    background-color: rgb(255, 183, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footerBookingBannerText{
+    font-size: 2.3rem;
+    font-family: var(--clientReviewTextFont);
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.footerBookingBannerButton .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+    height: 3rem;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 4rem;
+    cursor: pointer;
+    border: 1.5px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    transition: .3s ease-in-out;
+    font-family: var(--clientReviewTextFont);
+    letter-spacing: 2px;
+}
+.footer-Links{
+    padding: 3rem;
+    min-width: 80%;
+}
+.footerContactDetails{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.footer-boxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+
+}
+.footerContactDetails ul{
+    list-style: none;
+}
+.footer-heading{
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+.footer-DescText, .footer-DescText ul{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.footer-DescText ion-icon{
+    font-size: 1.3rem;
+}
+.footer-DescText{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+.copyrightText{
+    font-size: 1.3rem;
+    user-select: none;
+}

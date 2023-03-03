@@ -1,0 +1,576 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mainHeading {
+    font-size: 8rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 4px 4px 9px rgba(0,0,0,0.7);
+    text-shadow: var(--defaultCardShadow);
+}
+
+.supportingText {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.homeWrapper {
+    gap: 40px;
+    position: relative;
+    background: url(../img/homeBg.jpg) no-repeat;
+    background-size: cover;
+    font-family: var(--mainBodyTextFont);
+}
+
+.homeText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+    user-select: none;
+}
+
+.btn {
+    outline: none;
+    padding: 3px 5px;
+    user-select: none;
+}
+
+.big-btn .btn,
+#readMore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 4rem;
+    font-size: 1.8rem;
+    border-radius: 4rem;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #ffaa26;
+    color: #fff;
+    font-weight: 600;
+    transition: .3s ease-in-out;
+}
+
+.big-btn .btn:hover ,
+#readMore:hover{
+    box-shadow: inset -2px 2px 10px rgba(0, 0, 0, 0.4), inset 2px -2px 10px rgba(0, 0, 0, 0.3), inset -2px -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.videoLink {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 3.5rem;
+    margin-left: 3.5rem;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+
+.videoIcon {
+    font-size: 4rem;
+    color: #fff;
+}
+
+.videoText {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2px;
+    color: #fff;
+}
+
+.videoWatchTextSm {
+    font-size: 1.2rem;
+    color: #fff;
+    padding-bottom: 2px;
+    transition: .3s ease-in-out;
+}
+
+.videoDesc {
+    font-size: 1.3rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.videoLink:hover .videoWatchTextSm {
+    color: #22ff00;
+}
+
+/* Home section CSS End */
+
+
+/* Intro Div CSS Start */
+.introWrapper {
+    gap: 50px;
+    font-family: var(--mainBodyTextFont);
+}
+
+.introText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 80%;
+    gap: 10px;
+}
+
+.introHeading {
+    font-size: 5rem;
+}
+
+.introDesc p {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: var(--mainBodyDescText);
+}
+
+.introDesc p a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #010101c6;
+}
+.servicesCardsWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.servicesCardsWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    padding-bottom: 50px;
+}
+
+.servicesCardsWrapper>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.card {
+    width: 13rem;
+    height: 13rem;
+    padding: 2.4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    /* box-shadow: -4px 4px 15px rgba(0, 0, 0, 0.4), inset 2px 2px 7px rgba(0, 0, 0, 0.3); */
+    box-shadow: var(--defaultCardShadow);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.card:hover{
+    background-color: #f6fcc5df;
+}
+.card.active {
+    background-color: #e7e7e7e6;
+}
+
+.card-icon ion-icon {
+    font-size: 2rem;
+    color: #ff8800;
+}
+
+.card-icon.pricing ion-icon {
+    transform: rotate(-45deg);
+}
+
+.card-heading {
+    font-size: 1.059rem;
+    font-weight: 600;
+}
+
+.card-desc {
+    font-size: 1rem;
+    color: #717171;
+}
+
+.indicator-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.indicator {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: .5px solid rgb(231, 142, 0);
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: #ff8800;
+}
+
+/* Intro Div CSS End */
+
+
+/* Destination CSS Start */
+
+.destinationWrapper {
+    gap: 30px;
+    font-family: var(--mainBodyTextFont);
+}
+
+.destinationTextWrapper {
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.destinationHeading {
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: #010101;
+}
+
+.destinationDesc {
+    font-family: var(--mainBodyDescText);
+    font-size: 1.8rem;
+    color: #565656;
+}
+
+.searchBoxWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.searchBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBox label {
+    display: flex;
+    gap: 5px;
+    padding: 5px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchIcon ion-icon {
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.searchInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchInput input {
+    width: 300px;
+    outline: none;
+    border: none;
+    padding: 2px 10px;
+    background-color: transparent;
+    font-size: 1.8rem;
+    font-family: var(--mainBodyTextFont);
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+/* Destination cards */
+.destinationCardsWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    min-width: 70%;
+}
+.threeCardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.destinationCard{
+    background-color: #a6a6a6;
+    width: 13rem;
+    height: 13rem;
+    border-radius: .2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.destinationCard img{
+    width: 100%;
+    aspect-ratio: 1;
+    transition: .3s ease-in-out;
+}
+.destinationCard p{
+    position: absolute;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.7rem;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+.destinationCard:hover>img{
+    mix-blend-mode:color-burn;
+}
+.destinationCard:hover p{
+    opacity: 1;
+}
+#destinationCardSlideLeft{
+    left:0;
+}
+.slideBtn{
+    position: absolute;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.slideBtn ion-icon{
+    transition: .3s ease-in-out;
+}
+.slideBtn:hover ion-icon{
+    color:#ff8800;
+}
+#destinationCardSlideRight{
+    right:0; 
+}
+
+/* Blog CSS */
+#blog>.container{
+    gap: 30px;
+}
+.blogTextWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 75%;
+}
+.blogHeading{
+    font-family: var(--mainBodyTextFont);
+    font-size: 4rem;
+}
+.blogDesc{
+    font-family: var(--mainBodyDescText);
+    font-size: 1.5rem;
+    color: #717171;
+}
+
+/* <========= Blog Cards ========>*/
+
+.blogCardWrapper{
+    isolation: isolate;
+    display: inline-grid;
+    grid-template-columns: 10rem 10rem 10rem 10rem;
+    grid-template-rows: 10rem 10rem 10rem;
+    gap: 1rem;
+}
+.blogCard{
+    position: relative;
+    background-color: rgba(243, 243, 243, 0.707);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow: -2px 2px 15px rgba(238, 201, 14, 0.4);
+    cursor: pointer
+}
+.card1{
+    grid-area: 1/1/ span 2/span 2;
+}
+.card2{
+    grid-row: 1/span 2;
+    flex-direction: column;
+}
+.card4{
+    grid-row: 2/span 2;
+    flex-direction: column;
+}
+.card5{
+    grid-column: 1/span 2;
+}
+.card2 .blogCardText,.card4 .blogCardText,.card5 .blogCardText{
+    display: flex;
+    align-self: center;
+    font-size: .7rem;
+    padding: .2rem 1.4rem;
+    font-family: var(--mainBodyDescText);
+    line-height: 1rem;
+}
+.blogCardImage{
+    width: 100%;
+    aspect-ratio: 1;
+}
+.blogCardImage img{
+    width: 100%;
+    aspect-ratio: 1;
+}
+.card5 .blogCardImage img{
+    width: 10rem;
+    aspect-ratio: 1;
+}
+.btn#readMore{
+    margin-top: 30px;
+}
+/* #readMore{
+     Properties are assigned above in big-btn and .btn class 
+} */
+.baseline{
+    width: 70%;
+    border-bottom: 1px solid #717171;
+    margin-top: 10px;
+}
+#clients .container{
+    gap: 30px;
+}
+.clientReviewTextWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 75%;
+}
+.clientReviewHeading{
+    font-size: 4rem;
+    font-family: var(--mainBodyTextFont);
+    font-weight: 600;
+    color:#565656;
+}
+.clientReviewDesc{
+    font-size: 1.5rem;
+    font-family: var(--mainBodyDescText);
+    color: #717171;
+}
+
+
+
+/* <=============   Client Review Cards  ===================>*/
+
+.clientReviewCardsWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 75%;
+    position: relative;
+    padding: 4rem .1rem;
+}
+.clientReviewCard::before{
+    top: -7rem;
+    left: -9rem;
+    transform: rotateY(180deg);
+}
+.clientReviewCard::after{
+    right: -9rem;
+    bottom: -17rem;
+}
+.clientReviewCard::after,.clientReviewCard::before{
+    content: '"';
+    position: absolute;
+    display:flex;
+    font-size: 15rem;
+    color: #e0e0e0a6;
+    font-family: var(--commaTextFont);
+}
+.clientReviewCard{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    width: 40rem;
+    height: 12rem;
+    border-radius: .5rem;
+    padding: .8rem 1.4rem;
+    box-shadow: 8px 8px 20px #b89b4c7b, -2px -2px 15px #b89b4c7b;
+    
+}
+.clientReviewCardImage{
+    display: inline-block;
+    height:9.4rem;
+    width: 9.4rem;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: var(--defaultCardShadow);
+}
+.clientReviewCardImage img{
+    width: 100%;
+    aspect-ratio: 1;
+}
+.clientReviewCardTextWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2.3rem;
+    max-width: 70%;
+}
+.clientReviewText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--clientReviewTextFont);
+    font-size: 1rem;
+    color: #525050;
+}
+.clientDesc{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    line-height: 1.8rem;
+}
+.clientName{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ff8800;
+    font-family: var(--clientNameTextFont);
+}
+.clientPlace{
+    font-family: var(--clientReviewTextFont);
+    font-size: 1rem;
+}
+.clientReviewCardsWrapper .indicator-wrapper{
+    gap: 2rem;
+    margin-top: 5rem;
+}
